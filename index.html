@@ -22,7 +22,7 @@
             <div class="container">
                 <div class="header-top">
                     <!-- Logo -->
-                    <a href="/">
+                    <a href="#">
                         <figure>
                             <img
                                 src="./assets/img/logo.svg"
@@ -35,16 +35,18 @@
                     <navbar class="navbar">
                         <ul class="navbar__list">
                             <li class="navbar__item navbar__item--active">
-                                <a class="navbar__link" href="#!">Home</a>
+                                <a class="navbar__link" href="#">Home</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#!">About</a>
+                                <a class="navbar__link" href="#about">About</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#!">Blog</a>
+                                <a class="navbar__link" href="#contact"
+                                    >Contact</a
+                                >
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#!">Contact</a>
+                                <a class="navbar__link" href="#blog">Blog</a>
                             </li>
                         </ul>
                     </navbar>
@@ -53,8 +55,9 @@
                 </div>
             </div>
         </header>
+
         <!-- Main -->
-        <main style="height: 7000px">
+        <main>
             <!-- Hero -->
             <div class="separate"></div>
             <section class="hero">
@@ -73,8 +76,8 @@
                                 <a href="" class="btn hero-content__btn">
                                     Get in touch
                                 </a>
-                                <a href="" class="hero-action--video">
-                                    <div class="hero-action--play">
+                                <a href="" class="hero-action__video">
+                                    <div class="hero-action__play">
                                         <figure>
                                             <img
                                                 class="hero-action--icon"
@@ -84,7 +87,9 @@
                                         </figure>
                                     </div>
                                 </a>
-                                <p class="hero-action--desc">Watch Video</p>
+                                <a href="#!" class="hero-action__desc"
+                                    >Watch Video</a
+                                >
                             </div>
                         </section>
                         <!-- Hero media -->
@@ -294,7 +299,7 @@
             </section>
 
             <!-- About -->
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container">
                     <secion class="about__inner">
                         <div class="about-media">
@@ -456,7 +461,7 @@
             </section>
 
             <!-- Features -->
-            <section class="features">
+            <section class="features" id="contact">
                 <div class="container">
                     <section class="features-top">
                         <section class="section-heading features__heading">
@@ -587,7 +592,7 @@
             </section>
 
             <!-- Blog -->
-            <section class="blog">
+            <section class="blog" id="blog">
                 <div class="container">
                     <div class="section-title">BLOG & ARTICLES</div>
                     <div class="blog__row">
@@ -670,5 +675,151 @@
                 </div>
             </section>
         </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <!-- Column 1 -->
+                    <section class="footer__column">
+                        <h3 class="footer__heading">
+                            Sign up for our newsletter
+                        </h3>
+                        <form action="" class="footer-form">
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="footer-form__input"
+                                placeholder="Enter your email..."
+                            />
+                            <a href="#!" class="footer__icon">
+                                <svg
+                                    class="footer__icon--arrow"
+                                    width="22"
+                                    height="13"
+                                    viewBox="0 0 22 13"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                                        stroke="currentcolor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </form>
+                        <div class="footer-socials">
+                            <a href="#!" class="footer-socials__icon">
+                                <img
+                                    src="./assets/icons/facebook.svg"
+                                    alt="Facebook"
+                                />
+                            </a>
+                            <a href="#!" class="footer-socials__icon">
+                                <img
+                                    src="./assets/icons/instagram.svg"
+                                    alt="Instagram"
+                                />
+                                <span class="footer-socials__circle"></span>
+                            </a>
+                            <a href="#!" class="footer-socials__icon">
+                                <img
+                                    src="./assets/icons/twitter.svg"
+                                    alt="Twitter"
+                                />
+                            </a>
+                        </div>
+                    </section>
+                    <!-- Column 2 -->
+                    <section class="footer__column">
+                        <h3 class="footer__title">Pages</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Home</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">About</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Blog</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link"
+                                    >Blog Post</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Column 3 -->
+                    <section class="footer__column">
+                        <h3 class="footer__title">Product</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Home</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">About</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Blog</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link"
+                                    >Blog Post</a
+                                >
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Column 4 -->
+                    <section class="footer__column">
+                        <h3 class="footer__title">Overview</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link"> Home1 </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link"> Home2 </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link"> Home3 </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    Pricing1
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Column 5 -->
+                    <section class="footer__column">
+                        <h3 class="footer__title">About us</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Team</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link"
+                                    >Investors</a
+                                >
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Blog</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Press</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="footer__separate"></div>
+            </div>
+            <p class="footer__copyright">
+                2021 GDN. Copyright and All rights reserved.
+            </p>
+        </footer>
     </body>
 </html>
