@@ -90,6 +90,15 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Public+Sans:wght@500;800&display=swap"
             rel="stylesheet"
         />
+        <!-- Animations -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/CSS/style.css" />
     </head>
@@ -142,14 +151,23 @@
                     <div class="hero__inner">
                         <!-- Hero content -->
                         <section class="hero-content">
-                            <h2 class="hero__heading">
+                            <h2
+                                class="hero__heading"
+                                data-aos="animate__lightSpeedInLeft"
+                            >
                                 We’re a creative design agency.
                             </h2>
-                            <p class="hero__desc">
+                            <p
+                                class="hero__desc"
+                                data-aos="animate__lightSpeedInLeft"
+                            >
                                 A brilliant, modular agency template for
                                 startup’s build yours toady.
                             </p>
-                            <div class="hero-action">
+                            <div
+                                class="hero-action"
+                                data-aos="animate__lightSpeedInLeft"
+                            >
                                 <a href="" class="btn hero-content__btn">
                                     Get in touch
                                 </a>
@@ -171,21 +189,30 @@
                         </section>
                         <!-- Hero media -->
                         <div class="hero-media">
-                            <figure class="hero-media__thumb">
+                            <figure
+                                class="hero-media__thumb"
+                                data-aos="animate__fadeInTopLeft"
+                            >
                                 <img
                                     src="./assets/img/hero-img-1.jpg"
                                     alt=""
                                     class="hero-media__img"
                                 />
                             </figure>
-                            <figure class="hero-media__thumb">
+                            <figure
+                                class="hero-media__thumb"
+                                data-aos="animate__fadeInUp"
+                            >
                                 <img
                                     src="./assets/img/hero-img-2.jpg"
                                     alt=""
                                     class="hero-media__img"
                                 />
                             </figure>
-                            <figure class="hero-media__thumb">
+                            <figure
+                                class="hero-media__thumb"
+                                data-aos="animate__fadeInTopRight"
+                            >
                                 <img
                                     src="./assets/img/hero-img-3.jpg"
                                     alt=""
@@ -194,19 +221,16 @@
                             </figure>
                             <figure>
                                 <img
+                                    data-aos="animate__fadeInDown"
                                     src="./assets/img/hero-drop.svg"
                                     alt=""
                                     class="hero-media__drop--top"
                                 />
                             </figure>
-                            <figure>
-                                <img
-                                    src="./assets/img/hero-drop.svg"
-                                    alt=""
-                                    class="hero-media__drop--bottom"
-                                />
-                            </figure>
-                            <div class="lds-spinner hero-media__spinner--top">
+                            <div
+                                class="lds-spinner hero-media__spinner--top"
+                                data-aos="animate__fadeInDown"
+                            >
                                 <div></div>
                                 <div></div>
                                 <div></div>
@@ -220,8 +244,17 @@
                                 <div></div>
                                 <div></div>
                             </div>
+                            <figure>
+                                <img
+                                    data-aos="animate__fadeInUp"
+                                    src="./assets/img/hero-drop.svg"
+                                    alt=""
+                                    class="hero-media__drop--bottom"
+                                />
+                            </figure>
+
                             <div
-                                class="lds-spinner hero-media__spinner--bottom"
+                                class="lds-spinner hero-media__spinner--bottom animate__animated animate__fadeInUp"
                             >
                                 <div></div>
                                 <div></div>
@@ -921,5 +954,13 @@
                 2021 GDN. Copyright and All rights reserved.
             </p>
         </footer>
+        <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                useClassNames: true,
+                initClassName: null,
+                animatedClassName: "animate__animated",
+            });
+        </script>
     </body>
 </html>
