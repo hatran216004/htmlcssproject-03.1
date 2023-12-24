@@ -109,9 +109,6 @@ a {
 
 .lds-spinner div {
     transform-origin: 40px 40px;
-}
-
-.lds-spinner:hover div {
     animation: lds-spinner 1.5s linear infinite;
 }
 
